@@ -530,10 +530,13 @@ function Hero() {
                 style={{ flex: 1, background: "transparent", border: "none", outline: "none", color: T.text, fontFamily: T.mono, fontSize: 13, caretColor: T.accent }} />
             </div>
           )}
+          <div className="hero-mobile-cue" style={{ display: "none", alignItems: "center", justifyContent: "center", gap: 8, padding: "11px 16px 14px", borderTop: `1px solid ${T.border}`, background: "#050403" }}>
+            <span style={{ fontFamily: T.mono, fontSize: 10.5, color: T.textDim }}>scroll to explore</span>
+          </div>
         </div>
       </div>
 
-      <div style={{ position: "absolute", bottom: 24, left: "50%", transform: "translateX(-50%)", display: "flex", flexDirection: "column", alignItems: "center", gap: 8 }}>
+      <div className="hero-scroll-cue" style={{ position: "absolute", bottom: 24, left: "50%", transform: "translateX(-50%)", display: "flex", flexDirection: "column", alignItems: "center", gap: 8 }}>
         <span style={{ fontFamily: T.mono, fontSize: 11, color: T.textDim }}>scroll to explore</span>
         <div style={{ width: 1, height: 28, background: `linear-gradient(to bottom, ${T.accentMuted}, transparent)` }} />
       </div>
@@ -998,6 +1001,8 @@ export default function Portfolio() {
           .proj-grid { grid-template-columns: 1fr !important; }
           .vol-grid { grid-template-columns: 1fr !important; }
           .cert-grid { grid-template-columns: 1fr !important; }
+          .hero-scroll-cue { display: none !important; }
+          .hero-mobile-cue { display: flex !important; }
         }
         @media (max-width: 500px) {
           .approach-grid { grid-template-columns: 1fr !important; }

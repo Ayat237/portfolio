@@ -946,7 +946,7 @@ function Contact() {
           Let's build something remarkable<span style={{ color: T.accent }}>.</span>
         </h3>
         <p style={{ fontFamily: T.font, fontSize: 15, color: T.textDim, margin: "0 0 30px" }}>
-          Available for collaboration, consulting, and full-time opportunities.
+          Available for collaboration, consulting, and opportunities.
         </p>
         <div style={{ display: "flex", justifyContent: "center", flexWrap: "wrap", gap: 12 }}>
           {methods.map(({ label, href, Icon, external }) => (

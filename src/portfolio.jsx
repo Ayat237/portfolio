@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef, useCallback } from "react";
 
 /* ═══════════════════════════════════════════════════
-   DATA
+   Data
    ═══════════════════════════════════════════════════ */
 const PROFILE = {
   name: "Ayat Mohamed",

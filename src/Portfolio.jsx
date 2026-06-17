@@ -532,7 +532,7 @@ function Hero() {
           )}
         </div>
 
-        <div className="hero-mobile-cue" style={{ display: "none", alignItems: "center", justifyContent: "center", gap: 8, marginTop: 14 }}>
+        <div className="hero-mobile-cue" style={{ display: "none", flexDirection: "column", alignItems: "center", justifyContent: "center", gap: 8, marginTop: 14 }}>
           <span style={{ fontFamily: T.mono, fontSize: 11, color: T.textDim }}>scroll to explore</span>
           <div style={{ width: 1, height: 22, background: `linear-gradient(to bottom, ${T.accentMuted}, transparent)` }} />
         </div>
